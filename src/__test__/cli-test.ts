@@ -1,5 +1,5 @@
 import { runCli } from '../cli';
-import fs from 'fs';
+import * as fs from 'fs';
 import { expect } from 'chai';
 
 const wait = (to = 1000) => new Promise(res => setTimeout(res, to));
