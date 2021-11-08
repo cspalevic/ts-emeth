@@ -6,7 +6,7 @@ const wait = (to = 1000) => new Promise(res => setTimeout(res, to));
 const remove = v => fs.existsSync(v) && fs.unlinkSync(v);
 
 describe('cli', function () {
-    before((done) => {
+    after((done) => {
         remove(`${__dirname}/fixtures/test.cssi.ts`);
         remove(`${__dirname}/fixtures/test2.module.cssi.ts`);
         done();

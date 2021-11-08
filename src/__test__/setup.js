@@ -1,1 +1,3 @@
-global.window = global;
+if (!global.window){
+    global.window = global;
+}
