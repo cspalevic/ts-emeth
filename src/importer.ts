@@ -2,7 +2,7 @@ import theme from 'emeth';
 
 type Component = Record<string, string>
 type Context = ((key: string) => any) & { keys(): string[] };
-type Theme = Record<string, Component>;
+type Theme = { [key: string]: Component };
 
 function isFunction(v: unknown): v is Function {
     return typeof v === 'function';
