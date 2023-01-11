@@ -11,7 +11,7 @@
     "url": "https://github.com/jspears/ts-emeth.git"
   },
   "scripts": {
-    "test": "mocha -r ts-node/register -r ./src/__test__/setup ./src/__test__/**/*-test.ts*",
+    "test": "TS_NODE_COMPILER_OPTIONS='{\"noEmit\":true}'  mocha -r ts-node/register  -r ./src/__test__/setup ./src/__test__/**/*-test.ts*",
     "prepare": "tsc && $npm_execpath run test",
     "watch": "tsc -w"
   },
