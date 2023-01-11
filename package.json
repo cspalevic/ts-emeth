@@ -12,7 +12,7 @@
   },
   "scripts": {
     "test": "TS_NODE_COMPILER_OPTIONS='{\"noEmit\":true}'  mocha -r ts-node/register  -r ./src/__test__/setup ./src/__test__/**/*-test.ts*",
-    "prepare": "tsc && $npm_execpath run test",
+    "prepare": "tsc",
     "watch": "tsc -w"
   },
   "bin": {
