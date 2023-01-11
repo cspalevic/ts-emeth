@@ -12,7 +12,7 @@
   },
   "scripts": {
     "test": "TS_NODE_COMPILER_OPTIONS='{\"noEmit\":true}'  mocha -r ts-node/register  -r ./src/__test__/setup ./src/__test__/**/*-test.ts*",
-    "prepare": "tsc",
+    "build": "tsc",
     "watch": "tsc -w"
   },
   "bin": {
@@ -27,7 +27,6 @@
     "chokidar": "^3.3.1",
     "css-loader": "^3.5.2",
     "emeth": "^2.0.0",
-    "reflect-metadata": "^0.1.13",
     "ts-arg": "^1.0.3"
   },
   "devDependencies": {
