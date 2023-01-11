@@ -1,6 +1,6 @@
 {
   "name": "ts-emeth",
-  "version": "1.3.3",
+  "version": "1.3.4",
   "description": "CSS Modules cli for emeth and TypeScript",
   "types": "lib/*.d.ts",
   "main": "./index",
